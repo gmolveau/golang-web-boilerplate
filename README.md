@@ -16,10 +16,10 @@ features :
 - middlewares ?
 - validation
 - security headers
-    c.Response.Out.Header().Add("X-Frame-Options", "SAMEORIGIN")
-    c.Response.Out.Header().Add("X-XSS-Protection", "1; mode=block")
-    c.Response.Out.Header().Add("X-Content-Type-Options", "nosniff")
-    c.Response.Out.Header().Add("Referrer-Policy", "strict-origin-when-cross-origin")
+    - `c.Response.Out.Header().Add("X-Frame-Options", "SAMEORIGIN")`
+    - `c.Response.Out.Header().Add("X-XSS-Protection", "1; mode=block")`
+    - `c.Response.Out.Header().Add("X-Content-Type-Options", "nosniff")`
+    - `c.Response.Out.Header().Add("Referrer-Policy", "strict-origin-when-cross-origin")`
 - secret pour signer les cookies
 - port
 - prefix de cookie
